@@ -5,14 +5,11 @@ title: About
 ---
 ## About
 
-Github's Octocat was designed by Simon Oxley, alongside the white bird Twitter used (before they received a proper logo) as part of a usual routine of cranking out images for iStock. GitHub saw it, and wanted it, presumably under the notion that it can represent how complex code combines to create peculiar things, much like the octopuss... except the CEO of GitHub called it an octocat, and it has been the octocat since <a href="https://www.quora.com/GitHub/What-is-the-story-behind-GitHub%E2%80%99s-octocat-mascot" target="_blank">[via]</a>.
+Our IoT solution is a domestic intrusion detection system which depends solely on the signal strength of Wi-Fi.
 
-<small>
-Octocat is Github's logo and trademark and here is used to illustrate a fictional character (John Smith) that used the *{ Personal }* Jekyll Theme to build his website.
-</small>
+When people move through a space with a Wi-Fi signal, their body interferes with the radio waves by obstructing their path, absorbing some waves and reflecting others in various directions. The wavelength of 2.4GHz Wi-Fi signal is about 13 cm thus movement in that amount of space affects the signal strength from every direction the signal is coming from. By analyzing the exact ways the strength of the Wi-Fi signal is altered when a human moves through it it can be easily distinguished in a static environment when a person is interfering with the signal.
 
-Support the repo by starring or forking it!
+Our system requires a Wi-Fi router and Wi-Fi receivers. The Wi-Fi receivers need to be placed in strategic places in the environment and their role is to periodically read the Wi-Fi signal strength. The latter info is broadcasted to a central server running in the cloud which analyzes the signal and distinguishes with the help of some machine learning classifier whether there is human interference to the Wi-Fi signal or not.
 
-<iframe src="https://ghbtns.com/github-btn.html?user=panossakkos&repo=personal-jekyll-theme&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+When the server classifies that there is human present in the environment it notifies the house inhabitants. Optionally, the system polls the location status of the inhabitants via a smartphone application and only notifies them when none of the inhabitants are near the house.
 
-<iframe src="https://ghbtns.com/github-btn.html?user=panossakkos&repo=personal-jekyll-theme&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
